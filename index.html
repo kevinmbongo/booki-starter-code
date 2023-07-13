@@ -33,7 +33,9 @@
   <body>
     <div class="main-container">
       <header>
-        <img src="./images/logo/Booki.png" alt="logo" class="logo" />
+        <div class="logo">
+          <img src="./images/logo/Booki.png" alt="logo" />
+        </div>
 
         <nav class="menu">
           <div class="divs">
@@ -47,11 +49,13 @@
           </div>
         </nav>
       </header>
-
+      <div class="spacer-30"></div>
       <main>
         <section class="section-info-group">
-          <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-          <span>En plein centre-ville ou en pleine nature</span>
+          <div class="main-title">
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <span>En plein centre-ville ou en pleine nature</span>
+          </div>
 
           <div class="search-bar">
             <button class="location-btn">
@@ -61,12 +65,11 @@
             <button class="search-btn-mobile">
               <i class="fa-solid fa-magnifying-glass"></i>
             </button>
-
-            <button class="search-btn-desktop">Rechercher</button>
+            <button class="hide-on-mobile">Rechercher</button>
           </div>
 
           <div>
-            <h3>Filtre</h3>
+            <h3 class="filters-title">Filtre</h3>
             <div class="filters">
               <button class="filter-btn-unselected">
                 <i class="fa-solid fa-money-bill-wave"></i>
@@ -98,7 +101,7 @@
           </div>
         </section>
 
-        <div class="spacer"></div>
+        <div class="spacer-35"></div>
 
         <div class="hebergements-and-populaires">
           <section class="populaires">
@@ -361,7 +364,7 @@
             </div>
           </section>
 
-          <div class="spacer"></div>
+          <div class="spacer-35"></div>
 
           <section class="activites">
             <h2 class="section-title">Activités à Marseille</h2>
@@ -423,7 +426,7 @@
         </div>
       </main>
 
-      <div class="spacer"></div>
+      <div class="spacer-35"></div>
       <footer>
         <nav class="footer-nav">
           <div>
