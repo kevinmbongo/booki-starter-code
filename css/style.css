@@ -546,9 +546,18 @@ header {
 
   .hebergements-cards {
     display: flex;
+     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
+    gap: 15px;
+  }
+
+  .hebergements-cards h3 {
+    text-align: start;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 8px;
   }
 
    .hebergements-cards .card {
@@ -594,7 +603,11 @@ header {
     margin-bottom: 5px;
   }
 
-
+.show-more {
+  display: flex;
+  justify-content: start;
+  width: 100%;
+}
   /****** Populaires ***********/
   .populaires {
      background-color: var(--main-bg-color);
