@@ -69,18 +69,21 @@ h1 {
   align-items: center;
 }
 
+.hide-on-desktop {
+  display: none;
+}
+
 /****** Header ***********/
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 0 25px;
 }
 
 /****** Logo ***********/
 .logo {
-  padding: 30px 50px;
+  padding: 30px 0;
 }
 .logo img {
   width: 60px;
@@ -137,33 +140,55 @@ header {
 .section-info-group {
   display: flex;
   flex-direction: column;
-  padding: 0 20px;
+  padding: 0;
   row-gap: 35px;
 }
 
+.search-bar {
+  display: flex;
+  align-items: center;
+  width: 377px;
+  border: var(--main-bg-color) solid 1px;
+  border-radius: 15px;
+  margin: 0;
+}
+
 .search-bar input {
+  border: none;
+  width: 100%;
+  padding: 14px;
+  font-size: 18px;
+  font-weight: 700;
+  outline: none;
 }
 
 .location-btn {
+  background-color: var(--main-bg-color);
+  padding: 16px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-color: inherit;
+  border: none;
+  cursor: pointer;
+  min-height: 100%;
 }
 
 .location-btn i {
-}
-
-.search-btn-desktop {
+  color: black;
+  font-size: 18px;
 }
 
 .search-btn-desktop {
   display: block;
   background-color: var(--main-color);
-  padding: 12px;
+  padding: 16px;
   border: var(--main-color);
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   cursor: pointer;
   min-height: 100%;
   color: white;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 700;
   font-style: normal;
 }
@@ -463,11 +488,8 @@ header {
     font-size: 18px;
   }
 
-  .search-btn-desktop {
-    display: none;
-  }
-
   .search-btn-mobile {
+    display: flex;
     background-color: var(--main-color);
     padding: 16px;
     border: var(--main-color);
