@@ -274,6 +274,7 @@ header {
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
   display: flex;
+  flex-direction: row-reverse;
   justify-content: space-between;
 }
 
@@ -285,6 +286,7 @@ header {
 
 /****** Hebergements ***********/
 .hebergements {
+  background-color: var(--main-bg-color);
   width: 65%;
 }
 
