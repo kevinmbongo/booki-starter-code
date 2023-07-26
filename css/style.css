@@ -28,6 +28,15 @@ h6,
 p {
   margin: 0;
 }
+svg {
+  width: 24px;
+  height: 24px;
+  fill: none;
+}
+
+svg circle {
+  stroke: var(--grey-tint-2);
+}
 
 .spacer-35 {
   height: 35px;
@@ -50,6 +59,12 @@ p {
 h1 {
   font-size: 22px;
   margin: 0;
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .section-title {
@@ -130,6 +145,7 @@ header {
   padding-top: 10px;
   padding-bottom: 20px;
   cursor: pointer;
+  text-align: center;
 }
 
 .btn-menu-unselected {
@@ -140,6 +156,7 @@ header {
   padding-top: 10px;
   padding-bottom: 20px;
   cursor: pointer;
+  text-align: center;
 }
 
 .menu-bar-selected {
@@ -371,6 +388,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.populaires-cards a {
+  display: flex;
+  width: 100%;
 }
 
 .populaires-cards .card {
