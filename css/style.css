@@ -136,7 +136,18 @@ header {
   justify-content: center;
   align-items: center;
 }
-.btn-menu-selected {
+.divs a {
+  width: 100%;
+  background-color: transparent;
+  font-size: 16px;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.divs:hover a {
   width: 100%;
   background-color: transparent;
   color: var(--main-color);
@@ -148,24 +159,14 @@ header {
   text-align: center;
 }
 
-.btn-menu-unselected {
-  width: 100%;
-  background-color: transparent;
-  font-size: 16px;
-  border: none;
-  padding-top: 10px;
-  padding-bottom: 20px;
-  cursor: pointer;
-  text-align: center;
-}
-
-.menu-bar-selected {
-  background-color: var(--main-color);
+.divs div {
+  background-color: #ffffff;
   width: 100%;
   height: 3px;
 }
-.menu-bar-unselected {
-  background-color: #ffffff;
+
+.divs:hover div {
+  background-color: var(--main-color);
   width: 100%;
   height: 3px;
 }
